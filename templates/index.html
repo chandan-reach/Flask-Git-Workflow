@@ -1,39 +1,29 @@
+<h2>To-Do Application</h2>
 
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Flask MongoDB Form</title>
-</head>
-<body>
+<form action="/submittodoitem" method="POST">
 
-    <h1>Submit Your Data</h1>
+    <label>Item Name:</label>
+    <input type="text" name="itemName" required>
 
-    {% if error %}
-        <p style="color: red;">
-            {{ error }}
-        </p>
-    {% endif %}
+    <br><br>
+    <label>Item ID:</label>
+    <input type="text" name="itemId">
 
-    <form method="POST" action="/">
+    <br><br>
+    <label>Item UUID:</label>
+    <input type="text" name="itemUUID">
+     
+    <br><br>
+    <label>Item Hash:</label>
+    <input type="text" name="itemHash">
 
-        <label>Name:</label>
-        <input type="text" name="name" required>
+    <br><br>
 
-        <br><br>
+    <label>Item Description:</label>
+    <textarea name="itemDescription" required></textarea>
 
-        <label>Email:</label>
-        <input type="email" name="email" required>
+    <br><br>
 
-        <br><br>
+    <button type="submit">Submit</button>
 
-        <label>Message:</label>
-        <textarea name="message" required></textarea>
-
-        <br><br>
-
-        <button type="submit">Submit</button>
-
-    </form>
-
-</body>
-</html>
+</form>
