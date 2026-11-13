@@ -14,9 +14,15 @@
         "name": "Aman",
         "role": "Tester"
     },
+    {
+        "id": 4,
+        "name": "Rohit",
+        "role": "Manager"
+    },
      {
-        "id": 1,
-        "name": "Main Branch User",
-        "course": "Java"
+        "id": 5,
+        "name": "Abhi Kumar",
+        "course": "Python"
+
     }
 ]
